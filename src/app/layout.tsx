@@ -12,7 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
-      <body className={sans.className}>{children}</body>
+      <body
+        className={`${sans.className} bg-zinc-100 text-zinc-900 min-h-screen min-w-[320px]`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
